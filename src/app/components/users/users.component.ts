@@ -10,6 +10,8 @@ export class UsersComponent implements OnInit {
   users: User[];
   showExtended = true;
   loaded = false;
+  enableAdd = true;
+  currentClasses = {};
 
   constructor() { }
 
@@ -25,6 +27,8 @@ export class UsersComponent implements OnInit {
             city: 'bangalore',
             state: 'karnataka'
           },
+          image: 'http://lorempixel.com/200/00/people/3',
+          isActive: true,
         },
         {
           firstname: 'Abhishek',
@@ -35,6 +39,8 @@ export class UsersComponent implements OnInit {
             city: 'bangalore',
             state: 'karnataka'
           },
+          image: 'http://lorempixel.com/200/200/people/3',
+          isActive: false,
         },
         {
           firstname: 'rishav',
@@ -45,27 +51,37 @@ export class UsersComponent implements OnInit {
             city: 'calicut',
             state: 'kerara'
           },
+          image: 'http://lorempixel.com/200/200/people/3',
+          isActive: true,
         },
        ];
        this.loaded = true;
     // }, 3000);
     // this.showExtended = false;
-    this.addUser(
-      {
-        firstname: 'ajit',
-        lastname: 'singh',
-        // age: 23,
-        // address: {
-        //   street: 'that street',
-        //   city: 'sahibganj',
-        //   state: 'JH'
-        // },
-      },
-    );
+    // this.addUser(
+    //   {
+    //     firstname: 'ajit',
+    //     lastname: 'singh',
+    //     // age: 23,
+    //     // address: {
+    //     //   street: 'that street',
+    //     //   city: 'sahibganj',
+    //     //   state: 'JH'
+    //     // },
+    //   },
+    // );
+
+    this.setCurrentClasses();
   }
 
-  addUser(user: User) {
-    this.users.push(user);
+  // addUser(user: User) {
+  //   this.users.push(user);
+  // }
+  setCurrentClasses() {
+    this.currentClasses = {
+      'btn-success': this.enableAdd,
+      'big-text': this.showExtended,
+    };
   }
 
 }

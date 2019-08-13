@@ -1,3 +1,9 @@
 #array0{
     color: brown;
 }
+.big-text{
+    text-transform: uppercase;
+}
+*::selection{
+    color: rgba(128, 0, 79, 0.281);
+}
