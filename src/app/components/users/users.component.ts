@@ -11,8 +11,8 @@ export class UsersComponent implements OnInit {
   showExtended = true;
   loaded = false;
   enableAdd = true;
-  currentClasses = {};
-   currentStyle = {};
+  // currentClasses = {};
+  // currentStyle = {};
 
   constructor() { }
 
@@ -28,9 +28,9 @@ export class UsersComponent implements OnInit {
             city: 'bangalore',
             state: 'karnataka'
           },
-          image: 'http://lorempixel.com/200/00/people/3',
+          // image: 'http://lorempixel.com/200/00/people/3',
           isActive: true,
-          balance: 1500,
+          // balance: 1500,
           registered: new Date('08/15/2019  10:30:00')
         },
         {
@@ -42,9 +42,9 @@ export class UsersComponent implements OnInit {
             city: 'bangalore',
             state: 'karnataka'
           },
-          image: 'http://lorempixel.com/200/200/people/3',
+          // image: 'http://lorempixel.com/200/200/people/3',
           isActive: false,
-          balance: 2500,
+          // balance: 2500,
           registered: new Date('08/13/2018  11:37:00')
         },
         {
@@ -56,9 +56,9 @@ export class UsersComponent implements OnInit {
             city: 'calicut',
             state: 'kerara'
           },
-          image: 'http://lorempixel.com/200/200/people/3',
+          // image: 'http://lorempixel.com/200/200/people/3',
           isActive: true,
-          balance: 1900,
+          // balance: 1900,
           registered: new Date('08/15/2019  9:13:00')
         },
        ];
@@ -78,24 +78,24 @@ export class UsersComponent implements OnInit {
     //   },
     // );
 
-    this.setCurrentClasses();
-    this.setCurrentStyles();
+    // this.setCurrentClasses();
+    // this.setCurrentStyles();
   }
 
   // addUser(user: User) {
   //   this.users.push(user);
   // }
-  setCurrentClasses() {
-    this.currentClasses = {
-      'btn-success': this.enableAdd,
-      'big-text': this.showExtended,
-    };
-  }
-  setCurrentStyles() {
-    this.currentStyle = {
-      'padding-top': this.showExtended ? '0' : '20px',
-      'font-size': this.showExtended ? '' : '50px',
-    };
-  }
+  // setCurrentClasses() {
+  //   this.currentClasses = {
+  //     'btn-success': this.enableAdd,
+  //     'big-text': this.showExtended,
+  //   };
+  // }
+  // setCurrentStyles() {
+  //   this.currentStyle = {
+  //     'padding-top': this.showExtended ? '0' : '20px',
+  //     'font-size': this.showExtended ? '' : '50px',
+  //   };
+  // }
 
 }
