@@ -30,6 +30,8 @@ export class UsersComponent implements OnInit {
           },
           image: 'http://lorempixel.com/200/00/people/3',
           isActive: true,
+          balance: 1500,
+          registered: new Date('08/15/2019  10:30:00')
         },
         {
           firstname: 'Abhishek',
@@ -42,6 +44,8 @@ export class UsersComponent implements OnInit {
           },
           image: 'http://lorempixel.com/200/200/people/3',
           isActive: false,
+          balance: 2500,
+          registered: new Date('08/13/2018  11:37:00')
         },
         {
           firstname: 'rishav',
@@ -54,6 +58,8 @@ export class UsersComponent implements OnInit {
           },
           image: 'http://lorempixel.com/200/200/people/3',
           isActive: true,
+          balance: 1900,
+          registered: new Date('08/15/2019  9:13:00')
         },
        ];
        this.loaded = true;
